@@ -7,6 +7,7 @@ Attraverso l'apposita API di Boolean
      Abbellire con CSS o Bootstrap
     Inserire un bottone che al click faccia il fetch per altre 10 mail (sostituendo le altre) */
 
+/* dichiaro gli elementi */
 const mail1El = document.getElementById("mail-1");
 const mail2El = document.getElementById("mail-2");
 const mail3El = document.getElementById("mail-3");
@@ -19,6 +20,7 @@ const mail9El = document.getElementById("mail-9");
 const mail10El = document.getElementById("mail-10");
 const btnMailEl = document.getElementById("btn-mail");
 
+/* creo la variabile mail */
 let email;
 
 /*const mailList = (mail) => {
@@ -29,6 +31,9 @@ let email;
 
 /*btnMailEl.addEventListener(("click", () => {}));*/
 
+/* Assegno agli elementi l'email generata dall'API */
+
+/* Email 1 */
 fetch("https://flynn.boolean.careers/exercises/api/random/mail")
   .then((response) => response.json())
   .then((data) => {
@@ -36,6 +41,7 @@ fetch("https://flynn.boolean.careers/exercises/api/random/mail")
     mail1El.innerText = email;
   });
 
+/* Email 2 */
 fetch("https://flynn.boolean.careers/exercises/api/random/mail")
   .then((response) => response.json())
   .then((data) => {
@@ -43,6 +49,7 @@ fetch("https://flynn.boolean.careers/exercises/api/random/mail")
     mail2El.innerText = email;
   });
 
+/* Email 3 */
 fetch("https://flynn.boolean.careers/exercises/api/random/mail")
   .then((response) => response.json())
   .then((data) => {
@@ -50,6 +57,7 @@ fetch("https://flynn.boolean.careers/exercises/api/random/mail")
     mail3El.innerText = email;
   });
 
+/* Email 4 */
 fetch("https://flynn.boolean.careers/exercises/api/random/mail")
   .then((response) => response.json())
   .then((data) => {
@@ -57,6 +65,7 @@ fetch("https://flynn.boolean.careers/exercises/api/random/mail")
     mail4El.innerText = email;
   });
 
+/* Email 5 */
 fetch("https://flynn.boolean.careers/exercises/api/random/mail")
   .then((response) => response.json())
   .then((data) => {
@@ -64,6 +73,7 @@ fetch("https://flynn.boolean.careers/exercises/api/random/mail")
     mail5El.innerText = email;
   });
 
+/* Email 6 */
 fetch("https://flynn.boolean.careers/exercises/api/random/mail")
   .then((response) => response.json())
   .then((data) => {
@@ -71,6 +81,7 @@ fetch("https://flynn.boolean.careers/exercises/api/random/mail")
     mail6El.innerText = email;
   });
 
+/* Email 7 */
 fetch("https://flynn.boolean.careers/exercises/api/random/mail")
   .then((response) => response.json())
   .then((data) => {
@@ -78,6 +89,7 @@ fetch("https://flynn.boolean.careers/exercises/api/random/mail")
     mail7El.innerText = email;
   });
 
+/* Email 8 */
 fetch("https://flynn.boolean.careers/exercises/api/random/mail")
   .then((response) => response.json())
   .then((data) => {
@@ -85,6 +97,7 @@ fetch("https://flynn.boolean.careers/exercises/api/random/mail")
     mail8El.innerText = email;
   });
 
+/* Email 9 */
 fetch("https://flynn.boolean.careers/exercises/api/random/mail")
   .then((response) => response.json())
   .then((data) => {
@@ -92,6 +105,7 @@ fetch("https://flynn.boolean.careers/exercises/api/random/mail")
     mail9El.innerText = email;
   });
 
+/* Email 10 */
 fetch("https://flynn.boolean.careers/exercises/api/random/mail")
   .then((response) => response.json())
   .then((data) => {
