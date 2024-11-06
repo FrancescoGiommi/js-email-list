@@ -17,6 +17,7 @@ const mail7El = document.getElementById("mail-7");
 const mail8El = document.getElementById("mail-8");
 const mail9El = document.getElementById("mail-9");
 const mail10El = document.getElementById("mail-10");
+const btnMailEl = document.getElementById("btn-mail");
 
 let email;
 
@@ -25,6 +26,8 @@ let email;
 
   }
 };*/
+
+/*btnMailEl.addEventListener(("click", () => {}));*/
 
 fetch("https://flynn.boolean.careers/exercises/api/random/mail")
   .then((response) => response.json())
